@@ -1,1 +1,5 @@
-# FullStackDeveloper-Group14
+# Proyecto
+
+## Descripción
+
+Desarrollar una web para reservar aulas.
