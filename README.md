@@ -4,7 +4,7 @@
 
 Desarrollar una web para reservar aulas.
 
-## Mockups
+## Mockups iniciales del cliente
 
 ### 01
 
