@@ -23,3 +23,7 @@ Desarrollar una web para reservar aulas.
 ![alt text](https://github.com/Area51TrainingCenter/FullStackDeveloper-Group14/blob/proyecto/mockups%20iniciales/04%20Reservar.png?raw=true)
 
 ## Avances
+
+1. Creación de componentes Login y AulasDisponibles
+
+2. Login usando Input, Output, ngIf y ngFor para mostrar las aulas disponibles
