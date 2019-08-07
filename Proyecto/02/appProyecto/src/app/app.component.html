@@ -1,0 +1,4 @@
+<div class="container">
+  <app-login *ngIf="!logueado" (onLogging)="ingresar($event)"></app-login>
+  <app-aulas-disponibles *ngIf="logueado" [aulasDisponibles]="aulasDisponibles"></app-aulas-disponibles>
+</div>

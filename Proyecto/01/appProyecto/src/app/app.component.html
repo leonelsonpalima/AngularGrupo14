@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+
+      <button class="btn btn-success btn-block" (click)="ingresar()">{{logueado ? "Salir" : "Ingresar"}}</button>
+      <app-login *ngIf="!logueado"></app-login>
+      <app-aulas-disponibles *ngIf="logueado"></app-aulas-disponibles>
+
+    </div>
+  </div>
+</div>
