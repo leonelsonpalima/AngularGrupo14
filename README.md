@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Curso de Angular + NodeJS + MongoDB
 
 **Profesor:** Sergio Hidalgo (sergiohidalgocaceres@gmail.com)
@@ -12,8 +12,6 @@
 1. Introducción: Entorno de desarrollo y creación de componentes
 
 2. Creación de componentes, inserción de un componente dentro de otro, eventos html. Uso de la directiva estructural *ngIf
-<<<<<<< HEAD
-=======
 # Proyecto
 
 ## Descripción
@@ -43,12 +41,10 @@ Desarrollar una web para reservar aulas.
 1. Creación de componentes Login y AulasDisponibles
 
 2. Login usando Input, Output, ngIf y ngFor para mostrar las aulas disponibles
->>>>>>> ea81a7571253cd5c076e4124c7554d622a10aa5e
-=======
 
 3. Entendiendo las entradas y salidas
 
 4. Entendiendo los servicios. Uso y aplicación para compartir datos
 
 5. Validando formularios con FormsModule
->>>>>>> 4f9a6a6de2ce28e3d82951a1aac3edb684af1706
+
