@@ -10,13 +10,14 @@ import { AutenticacionGuard } from './guards/autenticacion.guard';
 
 import { Routes, RouterModule } from "@angular/router"
 import { AutorizacionGuard } from './guards/autorizacion.guard';
+import { AutorizacionRolGuard } from './guards/autorizacionRol.guard';
 
 const rutas: Routes = [
   { path: "", component: LoginComponent },
   {
-    path: "alumno", children: [
+    path: "alumno", canActivate: [AutenticacionGuard], children: [
       { path: "", component: ListadoAlumnoComponent },
-      { path: "nuevo", component: NuevoAlumnoComponent, canActivateChild: [AutorizacionGuard] },
+      { path: "nuevo", component: NuevoAlumnoComponent, canActivate: [AutorizacionRolGuard] },
       { path: "edicion", component: EdicionAlumnoComponent }
     ]
   }
