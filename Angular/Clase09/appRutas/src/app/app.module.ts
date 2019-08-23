@@ -9,7 +9,8 @@ import { ListadoComponent } from './listado/listado.component';
 import { EdicionComponent } from './edicion/edicion.component';
 import { NoEncontradoComponent } from './no-encontrado/no-encontrado.component';
 import { ListadoCursosComponent } from './listado-cursos/listado-cursos.component';
-import { ContenedorUsuarioComponent } from './contenedor-usuario/contenedor-usuario.component'
+import { ContenedorUsuarioComponent } from './contenedor-usuario/contenedor-usuario.component';
+import { NuevoComponent } from './nuevo/nuevo.component'
 
 //const rutas: Route[]
 const rutas: Routes = [
@@ -17,6 +18,7 @@ const rutas: Routes = [
   {
     path: "usuario", component: ListadoComponent, children: [
       { path: "register", component: RegistroComponent },
+      { path: "nuevo", component: NuevoComponent },
       /* { path: "listado", component: ListadoComponent }, */
       { path: "edicion/:id", component: EdicionComponent }
     ]
@@ -44,7 +46,8 @@ const rutas: Routes = [
     EdicionComponent,
     NoEncontradoComponent,
     ListadoCursosComponent,
-    ContenedorUsuarioComponent
+    ContenedorUsuarioComponent,
+    NuevoComponent
   ],
   imports: [
     BrowserModule,

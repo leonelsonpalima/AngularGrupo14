@@ -49,7 +49,8 @@ export class ListadoComponent implements OnInit {
   }
 
   editar() {
-    this.router.navigate(["/usuario", "edicion", 20], { queryParamsHandling: "merge" })
+    //this.router.navigate([{ outlets: { inferior: ["usuario", "edicion", 20] } }], { queryParamsHandling: "merge" })
+    this.router.navigate(["edicion", 20], { relativeTo: this.activatedRoute, queryParamsHandling: "merge" })
   }
 
 }
