@@ -1,0 +1,28 @@
+<p>listado works!</p>
+<p>Tamano de la pagina = {{tam}}</p>
+<p>Pagina = {{pag}}</p>
+<p>Orden = {{ord}}</p>
+
+<div style="display: flex">
+  <table>
+    <thead>
+      <tr>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let persona of personas">
+        <td>{{persona.nombre}}</td>
+        <td>{{persona.apellido}}</td>
+        <td><button (click)="editar()">Editar</button></td>
+      </tr>
+    </tbody>
+    <button (click)="cambiarPagina(1)">1</button>
+    <button (click)="cambiarPagina(2)">2</button>
+    <button (click)="cambiarPagina(3)">3</button>
+  </table>
+
+  <router-outlet></router-outlet>
+</div>

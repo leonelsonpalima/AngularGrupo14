@@ -1,0 +1,15 @@
+<p>Estado de la promesa {{estado}}</p>
+<table>
+  <thead>
+    <tr>
+      <td>Nombre</td>
+      <td>Apellido</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of personas">
+      <td>{{persona.nombre}}</td>
+      <td>{{persona.apellido}}</td>
+    </tr>
+  </tbody>
+</table>
